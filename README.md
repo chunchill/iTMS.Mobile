@@ -1,7 +1,7 @@
 iTMS.Mobile
 ===========
 
-> This is mobile app built with jquery mobile,knockoutjs and requirejs,tested with jasmine
+> This is mobile app built with [jquery mobile](http://www.jquerymobile.com),[knockoutjs](www.knockoutjs.com) and [requirejs](http://www.requirejs.org),tested with [jasmine](http://jasmine.github.io).
 
 ## Getting Started
 * Clone this repo locally.
@@ -9,4 +9,4 @@ iTMS.Mobile
 * Install dependencies by running:```npm install```
 * Install bower packages by running:```bower install```
 * Run the app with:```grunt server```, it will open the browser automatically
-* Run the Jasmine tests with: ```grunt jasmine``` or ```grunt test```
+* Run the Jasmine tests with: ```grunt jasmine``` or```grunt tes```
