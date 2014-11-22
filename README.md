@@ -5,7 +5,7 @@ iTMS.Mobile
 
 ## Getting Started
 * Clone this repo locally.
-* If you haven't installed [grunt](http://gruntjs.com) yet,npm install -g grunt-cli,otherwise,ignore this step.
+* If you haven't installed [grunt](http://gruntjs.com) yet,```npm install -g grunt-cli```,otherwise,ignore this step.
 * Install dependencies by running:```npm install```
 * Install bower packages by running:```bower install```
 * Run the app with:```grunt server```, it will open the browser automatically
