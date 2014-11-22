@@ -9,4 +9,4 @@ iTMS.Mobile
 * Install dependencies by running:```npm install```
 * Install bower packages by running:```bower install```
 * Run the app with:```grunt server```, it will open the browser automatically
-* Run the Jasmine tests with: ```grunt jasmine``` or```grunt tes```
+* Run the Jasmine tests with: ```grunt jasmine``` or```grunt test```
