@@ -8,6 +8,7 @@ define(['src/app/services/demoServices'], function(demoService) {
 
         });
 
+        
         it('should be able to say something', function() {
             var sentens=demoService.saySomething("I love jesmine!");
             var expectedResult="Hi,you want to say: "+"I love jesmine!";
