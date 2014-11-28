@@ -1,6 +1,11 @@
 'use strict';
 
-define(['src/app/services/demoServices'], function(demoService) {
+define([
+	'spec/SpecHelper',
+	'src/app/services/demoServices'
+	],
+
+    function(jasmine , demoService) {
 
     describe('Testing Demo services', function() {
 
@@ -8,10 +13,9 @@ define(['src/app/services/demoServices'], function(demoService) {
 
         });
 
-        
         it('should be able to say something', function() {
-            var sentens=demoService.saySomething("I love jesmine!");
-            var expectedResult="Hi,you want to say: "+"I love jesmine!";
+            var sentens=demoService.saySomething("I love jasmine!");
+            var expectedResult="Hi,you want to say: "+"I love jasmine!";
             expect(sentens).toEqual(expectedResult);
         });
 
