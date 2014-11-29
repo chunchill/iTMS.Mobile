@@ -1,18 +1,14 @@
 require.config({
     paths: {
-        'jquery': '../vendor/jquery/dist/jquery',
-        'underscore': '../vendor/underscore/underscore',
-        'knockout': '../vendor/knockoutjs/dist/knockout'
+        'underscore': '../vendor/underscore/underscore'
     },
     shim: {
-        'jquery': {
-            exports: '$'
-        },
         'underscore': {
             exports: '_'
-        },
-        'knockout': {
-            exports: 'ko'
         }
     }
+});
+
+require(['viewmodels/mainViewModel'], function (mainViewModel) {
+    ko.applyBindings(mainViewModel);
 });
