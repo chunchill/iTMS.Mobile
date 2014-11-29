@@ -1,13 +1,15 @@
 define(['services/userServices'], function (userService) {
+    var userName = ko.observable('');
 
-    document.getElementsByTagName('html')[0].style.display = "block";
-    var userName = ko.observable('itms'),
-        option = {username: userName()},
-        login = function () {
-
+    var login = function () {
+        var option = {username: userName()};
             userService.loginDriver(option).then(function (result) {
-                if (result.errorMessage !== '') alert(result.errorMessage);
-                $.mobile.changePage("#indexpage");
+                if (result.errorMessage !== 'OK'){
+                    $.mobile.changePage("#errMessage");
+                }
+                else{
+                    $.mobile.changePage("#indexpage");
+                }
             })
         };
 

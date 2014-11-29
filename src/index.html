@@ -21,10 +21,13 @@
 <script src="lib/jquery.mobile-1.4.5.js"></script>
 <script src="vendor/amplify/lib/amplify.js"></script>
 <script src="vendor/knockoutjs/dist/knockout.js"></script>
+<script src="lib/knockout.mapping-latest.js"></script>
+<script src="lib/koExternalTemplateEngine_all.js"></script>
+<script src="lib/ko.extentions.js"></script>
 
 <script src="vendor/requirejs/require.js" data-main="app/main.js"></script>
 
-<div data-role="page" data-theme="a" id="login" >
+<div data-role="page" data-theme="a" id="login">
     <div data-role="popup" id="popupLogin" data-theme="b" data-overlay-theme="a" class="ui-corner-all">
         <form>
             <div style="padding:10px 20px;">
@@ -43,6 +46,17 @@
         <div class="ui-nodisc-icon ui-alt-icon"><!-- Classes added to the wrapper -->
             <p align="center"> &nbsp; <a href="#popupLogin" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-c  ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline">Signin</a></p>
         </div>
+    </div>
+</div>
+
+<div data-role="page" id="errMessage" data-overlay-theme="a" data-theme="c">
+    <div data-role="header" data-theme="a" class="ui-corner-top">
+        <h1>错误信息</h1>
+        <a href="#" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">返回</a>
+
+    </div>
+    <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+        <p>对不起，操作失败，请重试！</p>
     </div>
 </div>
 <!-- Start of first page: #one -->
