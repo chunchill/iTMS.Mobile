@@ -13,7 +13,6 @@ define(['services/userServices'], function (userService) {
             })
         };
 
-
     //public methods & Properties
     return {
         userName: userName,
