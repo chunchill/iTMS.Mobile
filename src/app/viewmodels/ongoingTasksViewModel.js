@@ -1,4 +1,4 @@
-define(['services/taskServices'], function (taskServices) {
+define(['services/taskServices', 'services/staticData'], function (taskServices, staticData) {
 
     var eoList = ko.observableArray();
     var selectedEoItem = {};

@@ -1,9 +1,9 @@
 define(['services/config'], function (config) {
 
-    var loginUrl = config.baseUrl + "auth/loginDriver",
+    var loginUrl = config.anotherUrl + "Location/eventCreateLocation ",
         init = function () {
             //driver login
-            amplify.request.define('loginDriver', 'ajax', {
+            amplify.request.define('eventCreateLocation', 'ajax', {
                 url: loginUrl,
                 dataType: 'json',
                 type: 'POST'
@@ -21,13 +21,13 @@ define(['services/config'], function (config) {
             }).promise()
         },
 
-        loginDriver = function (option) {
-            return defferRequest('loginDriver', option);
+        eventCreateLocation = function (option) {
+            return defferRequest('eventCreateLocation', option);
         };
 
     init();
 
     return{
-        loginDriver: loginDriver
+        eventCreateLocation: eventCreateLocation
     }
 });
